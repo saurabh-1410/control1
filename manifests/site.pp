@@ -27,9 +27,9 @@ File { backup => false }
 
 node default {
   # classify according to role fact
-  if $facts.dig('bigbird', 'role') and defined($facts['bigbird']['role']) {
-    include $facts['bigbird']['role']
+#  if $facts.dig('bigbird', 'role') and defined($facts['bigbird']['role']) {
+#    include $facts['bigbird']['role']
 #  } else {
 #    include role::agent
-  }
+#  }
 }
