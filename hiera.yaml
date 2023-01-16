@@ -1,0 +1,18 @@
+---
+version: 5
+defaults:
+  data_hash: yaml_data
+  datadir: "data"
+
+hierarchy:
+  - name: "hieradata module hiera overrides"
+    data_hash: yaml_data
+    datadir: .modules/hieradata/data
+    paths:
+      - "nodes/%{trusted.certname}.yaml"
+      - "common.yaml"
+  - name: "control-repo hiera"
+    data_hash: yaml_data
+    paths:
+      - "nodes/%{trusted.certname}.yaml"
+      - "common.yaml"
