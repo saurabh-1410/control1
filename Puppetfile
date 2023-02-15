@@ -29,16 +29,5 @@ mod 'puppetlabs/ruby_task_helper', '0.6.1'
 mod 'herculesteam/augeasproviders_core', '3.1.0'
 mod 'puppetlabs/pwshlib', '0.10.3'
 
-mod 'bigbird',
-  :git    => 'git@github.com:gavindidrichsen-puppetlabs/bigbird.git',
-  :branch => :control_branch,
-  :default_branch => 'main'
-mod 'hieradata',
-  :git    => 'git@github.com:gavindidrichsen-puppetlabs/hieradata.git',
-  :branch => :control_branch,
-  :default_branch => 'main'
-mod 'usage',
-  :git    => 'git@github.com:gavindidrichsen-puppetlabs/usage.git',
-  :branch => :control_branch,
-  :default_branch => 'main'
-
+mod 'teyaml',
+  :git    => 'git@github.com:saurabh-1410/teyaml.git'
