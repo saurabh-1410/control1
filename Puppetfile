@@ -31,3 +31,5 @@ mod 'puppetlabs/pwshlib', '0.10.3'
 
 mod 'teyaml',
   :git    => 'git@github.com:saurabh-1410/teyaml.git'
+mod 'mkcustomfact',
+  :git    => 'git@github.com:saurabh-1410/mkcustomfact.git'
