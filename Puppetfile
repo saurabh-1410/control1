@@ -34,3 +34,6 @@ mod 'teyaml',
   :git    => 'git@github.com:saurabh-1410/teyaml.git'
 mod 'mkcustomfact',
   :git    => 'git@github.com:saurabh-1410/mkcustomfact.git'
+
+mod 'testmod',
+  :git    => 'git@github.com:saurabh-1410/testmod.git'
