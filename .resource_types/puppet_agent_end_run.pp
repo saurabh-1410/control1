@@ -1,4 +1,4 @@
-# This file was automatically generated on 2023-05-16 12:28:28 +0100.
+# This file was automatically generated on 2023-05-16 15:31:19 +0100.
 # Use the 'puppet generate types' command to regenerate this file.
 
 # Stops the current Puppet run if a puppet-agent upgrade was

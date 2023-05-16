@@ -1,4 +1,4 @@
-# This file was automatically generated on 2023-05-16 12:28:26 +0100.
+# This file was automatically generated on 2023-05-16 15:31:17 +0100.
 # Use the 'puppet generate types' command to regenerate this file.
 
 # Manage resource memberships in Grafana

@@ -1,4 +1,4 @@
-# This file was automatically generated on 2023-05-16 12:28:27 +0100.
+# This file was automatically generated on 2023-05-16 15:31:18 +0100.
 # Use the 'puppet generate types' command to regenerate this file.
 
 # ini_settings is used to manage a single setting in an INI file

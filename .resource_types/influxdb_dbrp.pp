@@ -1,4 +1,4 @@
-# This file was automatically generated on 2023-05-16 12:28:27 +0100.
+# This file was automatically generated on 2023-05-16 15:31:18 +0100.
 # Use the 'puppet generate types' command to regenerate this file.
 
 # @summary Manages dbrps, or database and retention policy mappings.  These provide backwards compatibilty for 1.x queries.  Note that these are automatically created by the influxdb_bucket resource, so it isn't necessary to use this resource unless you need to customize them.

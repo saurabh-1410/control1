@@ -1,4 +1,4 @@
-# This file was automatically generated on 2023-05-16 12:28:27 +0100.
+# This file was automatically generated on 2023-05-16 15:31:18 +0100.
 # Use the 'puppet generate types' command to regenerate this file.
 
 # @summary Manages users in InfluxDB.  Note that currently, passwords can only be set upon creating the user and must be updated manually using the cli.  A user must be added to an organization to be able to log in.
