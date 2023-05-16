@@ -33,7 +33,7 @@ node default {
 #    include role::agent
 #  }
 }
-node sdclnt-cec56b-0.us-west1-c.c.customer-support-scratchpad.internal {
+node 'sdclnt-cec56b-0.us-west1-c.c.customer-support-scratchpad.internal' {
 class { 'docker':
   version => latest,
 }
