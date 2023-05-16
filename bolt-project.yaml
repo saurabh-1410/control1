@@ -16,6 +16,9 @@ modules:
 - puppetlabs/stdlib
 - puppetlabs/vcsrepo
 - puppetlabs/yumrepo_core
+- puppetlabs/cd4pe_jobs
+- git: https://github.com/saurabh-1410/testmod
+  ref: 'feature_test'
 plans:
 - control_repo::*
 tasks:
