@@ -1,15 +1,15 @@
 ---
-puppet_enterprise::master::code_manager::git_settings:
-  private-key: "/etc/puppetlabs/puppetserver/ssh/id-control_repo.ed25519"
-  repositories:
-    - remote: "git@github.com:saurabh-1410/control1.git"
-      private-key: "/etc/puppetlabs/puppetserver/ssh/id-control_repo.ed25519"
-    - remote: "git@github.com:saurabh-1410/control-repo.git"
-      private-key: "/etc/puppetlabs/puppetserver/ssh/id-control_repo.ed25519"
-puppet_enterprise::master::code_manager::sources:
-  control1:
-    remote: "git@github.com:saurabh-1410/control1.git"
-    prefix: false
-  control2:
-    remote: "git@github.com:saurabh-1410/control-repo.git"
-    prefix: true
+#puppet_enterprise::master::code_manager::git_settings:
+#  private-key: "/etc/puppetlabs/puppetserver/ssh/id-control_repo.ed25519"
+#  repositories:
+#    - remote: "git@github.com:saurabh-1410/control1.git"
+#      private-key: "/etc/puppetlabs/puppetserver/ssh/id-control_repo.ed25519"
+#    - remote: "git@github.com:saurabh-1410/control-repo.git"
+#      private-key: "/etc/puppetlabs/puppetserver/ssh/id-control_repo.ed25519"
+#puppet_enterprise::master::code_manager::sources:
+#  control1:
+#    remote: "git@github.com:saurabh-1410/control1.git"
+#    prefix: false
+#  control2:
+#    remote: "git@github.com:saurabh-1410/control-repo.git"
+#    prefix: true
