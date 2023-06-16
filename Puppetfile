@@ -41,4 +41,7 @@ mod 'usage',
   :git    => 'git@github.com:gavindidrichsen-puppetlabs/usage.git',
   :branch => :control_branch,
   :default_branch => 'main'
-
+mod 'mkcustomfact',
+  :git => 'git@github.com:saurabh-1410/mkcustomfact.git'
+  :branch=> :feature_a
+  :default_branch => main
