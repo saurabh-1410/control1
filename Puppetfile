@@ -36,5 +36,5 @@ mod 'puppet/telegraf', '4.3.1'
 mod 'puppetlabs/influxdb', '2.0.0'
 mod 'mkcustomfact',
   :git => 'git@github.com:saurabh-1410/mkcustomfact.git',
-  :branch=> :feature_a,
+  :branch=> 'feature_a',
   :default_branch => 'main'
