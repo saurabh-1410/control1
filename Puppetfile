@@ -31,7 +31,6 @@ mod 'herculesteam/augeasproviders_core', '3.1.0'
 mod 'puppetlabs/registry', '4.1.2'
 mod 'puppetlabs/ruby_task_helper', '0.6.1'
 mod 'puppetlabs/pwshlib', '0.10.3'
-<<<<<<< HEAD
 mod 'puppet/grafana', '11.2.0'
 mod 'puppet/telegraf', '4.3.1'
 mod 'puppetlabs/influxdb', '2.0.0'
