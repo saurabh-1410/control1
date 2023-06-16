@@ -1,4 +1,4 @@
-# This Puppetfile is managed by Bolt. Do not edit.
+ This Puppetfile is managed by Bolt. Do not edit.
 # For more information, see https://pup.pt/bolt-modules
 
 # The following directive installs modules to the managed moduledir.
@@ -50,6 +50,6 @@ mod 'usage',
   :branch => :control_branch,
   :default_branch => 'main'
 mod 'mkcustomfact',
-  :git => 'git@github.com:saurabh-1410/mkcustomfact.git'
-  :branch=> :feature_a
-  :default_branch => main
+  :git => 'git@github.com:saurabh-1410/mkcustomfact.git',
+  :branch=> :feature_a,
+  :default_branch => 'main'
