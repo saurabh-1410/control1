@@ -38,3 +38,4 @@ mod 'mkcustomfact',
   :git => 'git@github.com:saurabh-1410/mkcustomfact.git',
   :branch=> 'feature_a',
   :default_branch => 'main'
+mod 'puppetlabs-exec', '3.0.0'
