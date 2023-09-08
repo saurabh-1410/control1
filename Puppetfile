@@ -34,8 +34,5 @@ mod 'puppetlabs/pwshlib', '0.10.3'
 mod 'puppet/grafana', '11.2.0'
 mod 'puppet/telegraf', '4.3.1'
 mod 'puppetlabs/influxdb', '2.0.0'
-mod 'mkcustomfact',
-  :git => 'git@github.com:saurabh-1410/mkcustomfact.git',
-  :branch=> 'feature_a',
-  :default_branch => 'main'
-mod 'puppetlabs-exec', '3.0.0'
+mod 'dsc-computermanagementdsc', '9.0.0-0-0'
+mod 'puppetlabs-pwshlib', '0.10.3'
