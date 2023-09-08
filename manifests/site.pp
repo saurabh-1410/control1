@@ -38,3 +38,14 @@ class { 'docker':
   version => latest,
 }
 }
+
+node 'sdwind2019.c.customer-support-scratchpad.internal' {
+ dsc_scheduledtask { 'SessionPopup' :
+  dsc_taskname => 'SessionPopup',
+  dsc_actionexecutable => powershell,
+  dsc_actionarguments =>'-File "C:\Program Files\windowspowershell\scripts\Epic.Wss.sessionpopup\Epic.Wss.SessionPopup.ps1"',
+  dsc_scheduletype => 'atlogon',
+  dsc_enable => $enable,
+  dsc_ensure => $ensure,
+ }
+}
