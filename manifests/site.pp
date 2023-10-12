@@ -44,7 +44,7 @@ node 'sdwind2019.c.customer-support-scratchpad.internal' {
   dsc_taskname => 'SessionPopup',
   dsc_actionexecutable => powershell,
   dsc_actionarguments =>'-File "C:\Program Files\windowspowershell\scripts\Epic.Wss.sessionpopup\Epic.Wss.SessionPopup.ps1"',
-  dsc_scheduletype => 'AtLogOn',
+  dsc_scheduletype => 'AtLogon',
   dsc_enable => $enable,
   dsc_ensure => $ensure,
  }
