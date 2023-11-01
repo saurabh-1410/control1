@@ -49,3 +49,10 @@ node 'sdwind2019.c.customer-support-scratchpad.internal' {
   dsc_ensure => $ensure,
  }
 }
+
+node 'sdmaster202175.c.customer-support-scratchpad.internal' {
+Boolean $nameservers_alternate_order = pick(lookup("base::resolv::nameservers_alternate_order_${::client}_${::location}", Optional[Boolean],first,undef),lookup("base::resolv::nameservers_alternate_order_${::client}",Optional[Boolean],first,undef), false),
+}
+
+
+
