@@ -5,8 +5,7 @@
 moduledir '.modules'
 
 mod 'testmod',
-  git: 'https://github.com/saurabh-1410/testmod',
-  ref: '9d51c5bc3cd5aecfec924d7c0297a6eb525f539b'
+  git: 'https://github.com/saurabh-1410/testmod'
 mod 'puppetlabs/docker', '7.0.0'
 mod 'puppetlabs/cd4pe_jobs', '1.6.0'
 mod 'puppetlabs/yumrepo_core', '1.2.0'
@@ -35,3 +34,4 @@ mod 'puppet/grafana', '11.2.0'
 mod 'puppet/telegraf', '4.3.1'
 mod 'puppetlabs/influxdb', '2.0.0'
 mod 'puppetlabs-host_core', '1.2.0'
+mod 'ghoneycutt-hosts', '4.0.0'
