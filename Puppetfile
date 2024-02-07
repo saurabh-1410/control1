@@ -7,7 +7,6 @@ mod 'puppetlabs-cd4pe_jobs', '1.6.1'
 mod 'testmod',
   git: 'https://github.com/saurabh-1410/testmod'
 mod 'puppetlabs/docker', '7.0.0'
-mod 'puppetlabs/cd4pe_jobs', '1.6.0'
 mod 'puppetlabs/yumrepo_core', '1.2.0'
 mod 'puppetlabs/vcsrepo', '6.0.0'
 mod 'puppetlabs/stdlib', '8.6.0'
