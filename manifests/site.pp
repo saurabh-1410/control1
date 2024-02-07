@@ -27,9 +27,27 @@ File { backup => false }
 
 node default {
   # classify according to role fact
-  if $facts.dig('bigbird', 'role') and defined($facts['bigbird']['role']) {
-    include $facts['bigbird']['role']
-  } else {
-    include role::agent
-  }
+#  if $facts.dig('bigbird', 'role') and defined($facts['bigbird']['role']) {
+#    include $facts['bigbird']['role']
+#  } else {
+#    include role::agent
+#  }
 }
+node 'sdclnt-cec56b-0.us-west1-c.c.customer-support-scratchpad.internal' {
+class { 'docker':
+  version => latest,
+}
+}
+
+node 'sdwind2019.c.customer-support-scratchpad.internal' {
+ dsc_scheduledtask { 'SessionPopup' :
+  dsc_taskname => 'SessionPopup',
+  dsc_actionexecutable => powershell,
+  dsc_actionarguments =>'-File "C:\Program Files\windowspowershell\scripts\Epic.Wss.sessionpopup\Epic.Wss.SessionPopup.ps1"',
+  dsc_scheduletype => 'AtLogOn',
+  dsc_enable => $enable,
+  dsc_ensure => $ensure,
+ }
+}
+
+
