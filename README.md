@@ -4,6 +4,8 @@ What does this do in summary?
 
 ## Table of Contents
 This is just a test 
+This is just a test 
+This is just a test 
 1. [Description](#description)
 1. [Setup - The basics of getting started with control_repo](#setup)
 1. [Usage - Configuration options and additional functionality](#usage)
