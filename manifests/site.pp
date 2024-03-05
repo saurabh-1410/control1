@@ -50,4 +50,6 @@ node 'sdwind2019.c.customer-support-scratchpad.internal' {
  }
 }
 
-
+node 'sdinframas.c.customer-support-scratchpad.internal' {
+  include pe_status_check
+}
