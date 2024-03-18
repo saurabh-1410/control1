@@ -8,7 +8,8 @@ mod 'testmod',
      :git => 'https://github.com/saurabh-1410/testmod',
      :branch => 'master'
 mod 'prometheus_test',
-  git: 'https://github.com/saurabh-1410/prometheus_test'  
+     :git => 'https://github.com/saurabh-1410/prometheus_test',
+     :branch => 'master'  
 mod 'puppetlabs/docker', '7.0.0'
 mod 'puppetlabs/yumrepo_core', '1.2.0'
 mod 'puppetlabs/vcsrepo', '6.0.0'
