@@ -35,6 +35,6 @@ mod 'puppetlabs-splunk_hec', '1.4.0'
 mod 'puppetlabs-pe_event_forwarding', '1.1.1'
 mod 'puppetlabs-puppet_metrics_collector', '8.0.0'
 mod 'puppetlabs-pe_status_check', '4.1.0'
-mod 'puppetlabs-powershell', '2.3.1'
+mod 'puppetlabs-powershell', '2.1.3'
 mod 'puppetlabs-pwshlib', '1.0.1'
 
