@@ -9,7 +9,6 @@ modules:
 - puppet/systemd
 - puppet-windows_env
 - puppetlabs-acl
-- puppetlabs/chocolatey
 - puppetlabs/inifile
 - puppetlabs/pe_status_check
 - puppetlabs/puppet_operational_dashboards
@@ -18,8 +17,6 @@ modules:
 - puppetlabs/yumrepo_core
 - puppetlabs/cd4pe_jobs
 - puppetlabs/docker
-- git: https://github.com/saurabh-1410/testmod
-  ref: 'feature_test'
 plans:
 - control_repo::*
 tasks:
