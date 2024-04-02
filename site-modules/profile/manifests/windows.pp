@@ -1,3 +1,3 @@
 class profile::windows {
-#  include testmod::win
+  include testmod::win
 }
