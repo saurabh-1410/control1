@@ -5,7 +5,8 @@
 moduledir '.modules'
 mod 'puppetlabs-cd4pe_jobs', '1.6.1'
 mod 'testmod',
-  git: 'https://github.com/saurabh-1410/testmod'
+     :git => 'https://github.com/saurabh-1410/testmod',
+     :branch => 'master'
 mod 'puppetlabs/docker', '7.0.0'
 mod 'puppetlabs/yumrepo_core', '1.2.0'
 mod 'puppetlabs/vcsrepo', '6.0.0'
