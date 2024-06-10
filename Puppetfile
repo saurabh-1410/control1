@@ -37,4 +37,4 @@ mod 'puppetlabs-puppet_metrics_collector', '8.0.0'
 mod 'puppetlabs-pe_status_check', '4.1.0'
 mod 'puppetlabs-powershell', '1.0.1'
 mod 'puppetlabs-pwshlib', '1.0.1'
-
+mod 'puppetlabs-bolt_shim', '0.4.0'
