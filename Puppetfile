@@ -10,6 +10,9 @@ mod 'testmod',
 #mod 'prometheus_test',
 #     :git => 'https://github.com/saurabh-1410/prometheus_test',
 #     :branch => 'master'  
+mod 'newuser',
+  git: 'git@github.com:saurabh-1410/newuser.git',
+  braanch: 'master'
 mod 'puppetlabs/docker', '7.0.0'
 mod 'puppetlabs/yumrepo_core', '1.2.0'
 mod 'puppetlabs/vcsrepo', '6.0.0'
