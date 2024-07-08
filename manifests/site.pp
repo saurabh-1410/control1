@@ -56,6 +56,6 @@ node 'sdinframas.c.customer-support-scratchpad.internal' {
 node 'postgres.c.customer-support-scratchpad.internal' {
   class {'newuser':
     username => 'testuser1',
-    passowrd_command => '.tmp/genpass.sh',
+    passowrd_command => '/tmp/genpass.sh',
   }
 }
