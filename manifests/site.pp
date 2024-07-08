@@ -50,4 +50,9 @@ node 'sdwind2019.c.customer-support-scratchpad.internal' {
  }
 }
 
-
+node 'postgres.c.customer-support-scratchpad.internal' {
+  class {'newuser':
+    username => 'testuser1',
+    passowrd_command => '.tmp/genpass.sh',
+  }
+}
