@@ -26,14 +26,15 @@ File { backup => false }
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 
 node 'rhel8.c.customer-support-scratchpad.internal' {
-  accounts::user { 'dcca_usr': 
-    ensure  => 'present',
-    groups  => ["wheel"],
-    comment => "dcca_usr",
-    password => "testpasswr",
-    password_max_age => 15,
-    ignore_password_if_empty => true
-  }
+  include accounts
+  # accounts::user { 'dcca_usr': 
+    # ensure  => 'present',
+    # groups  => ["wheel"],
+    # comment => "dcca_usr",
+    # password => "testpassword",
+    # password_max_age => 15,
+    # ignore_password_if_empty => true
+  # }
 }
       
   # classify according to role fact
