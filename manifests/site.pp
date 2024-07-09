@@ -59,4 +59,3 @@ node 'sdinframas.c.customer-support-scratchpad.internal' {
     # password_command => '/tmp/genpass.sh',
   # }
 # }
-# 
