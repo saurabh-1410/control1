@@ -7,7 +7,6 @@ defaults:
 hierarchy:
   - name: "hieradata module hiera overrides"
     data_hash: yaml_data
-    datadir: .modules/hieradata/data
     paths:
       - "nodes/%{trusted.certname}.yaml"
       - "common.yaml"
