@@ -30,7 +30,7 @@ node 'rhel8.c.customer-support-scratchpad.internal' {
     ensure  => 'present',
     groups  => ["wheel"],
     comment => "dcca_usr",
-    password => "testpasswd",
+    password => "testpasswr",
     password_max_age => 15,
     ignore_password_if_empty => true
   }
