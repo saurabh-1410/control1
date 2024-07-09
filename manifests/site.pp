@@ -26,6 +26,7 @@ File { backup => false }
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 
 node default {
+  include ::accounts
   # classify according to role fact
 #  if $facts.dig('bigbird', 'role') and defined($facts['bigbird']['role']) {
 #    include $facts['bigbird']['role']
