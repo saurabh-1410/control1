@@ -53,9 +53,10 @@ node 'sdwind2019.c.customer-support-scratchpad.internal' {
 node 'sdinframas.c.customer-support-scratchpad.internal' {
   include pe_status_check
 }
-node 'postgres.c.customer-support-scratchpad.internal' {
-  class {'newuser':
-    username => 'testuser1',
-    password_command => '/tmp/genpass.sh',
-  }
-}
+# node 'postgres.c.customer-support-scratchpad.internal' {
+  # class {'newuser':
+    # username => 'testuser1',
+    # password_command => '/tmp/genpass.sh',
+  # }
+# }
+# 
