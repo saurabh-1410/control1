@@ -25,15 +25,23 @@ File { backup => false }
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 
-node default {
-  include ::accounts
+node 'rhel8.c.customer-support-scratchpad.internal' {
+  accounts::user { 'dcca_usr': 
+    ensure  => 'present',
+    groups  => ["wheel"],
+    comment => "dcca_usr",
+    password => "$testpasswd",
+    password_max_age => '15',
+    ignore_password_if_empty => true
+  }
+}
+      
   # classify according to role fact
 #  if $facts.dig('bigbird', 'role') and defined($facts['bigbird']['role']) {
 #    include $facts['bigbird']['role']
 #  } else {
 #    include role::agent
 #  }
-}
 node 'sdclnt-cec56b-0.us-west1-c.c.customer-support-scratchpad.internal' {
 class { 'docker':
   version => latest,
@@ -60,3 +68,5 @@ node 'sdinframas.c.customer-support-scratchpad.internal' {
     # password_command => '/tmp/genpass.sh',
   # }
 # }
+
+node default {}
