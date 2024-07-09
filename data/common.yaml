@@ -13,4 +13,4 @@
 #  control2:
 #    remote: "git@github.com:saurabh-1410/control-repo.git"
 #    prefix: true
-puppet_enterprise::profile::master::versioned_deploys: true
+puppet_enterprise::profile::master::versioned_deploys: false
