@@ -2,7 +2,7 @@
 accounts::user_list:
   dcca_usr:
     ensure: 'present'
-  comment: "dcca_usr"
-  password: "$testpassword"
-  password_max_age: 15
-  ignore_password_if_empty: true
+    comment: "dcca_usr"
+    password: "$testpassword"
+    password_max_age: 15
+    ignore_password_if_empty: true
