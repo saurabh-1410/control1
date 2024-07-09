@@ -1,5 +1,5 @@
 ---
-accounts::user:
+accounts::user_list:
   dcca_usr:
     ensure: 'present'
   comment: "dcca_usr"
