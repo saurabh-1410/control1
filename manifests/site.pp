@@ -26,7 +26,7 @@ File { backup => false }
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 
 node 'rhel8.c.customer-support-scratchpad.internal' {
-  accounts::user { 'dcca_usr': 
+  accounts::user_list { 'dcca_usr': 
     ensure  => 'present',
     groups  => ["wheel"],
     comment => "dcca_usr",
