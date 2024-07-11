@@ -72,7 +72,7 @@ node 'rhel8.c.customer-support-scratchpad.internal' {
     username         => 'testuser1',
     password_command => '/tmp/genpass.sh',
   }
-  notify { "user is ${username}": }
+  notify { "user is ${newuser[username]}": }
   notify { "password is ${password}": }
   notice("This is now included in puppetserver logs ${password}")
 }
