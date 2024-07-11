@@ -25,21 +25,21 @@ File { backup => false }
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 
-node 'rhel8.c.customer-support-scratchpad.internal' {
-  include accounts
-  # notify { "account info ${accounts::user_list}": }
-  notify { "the password is ${accounts::user_list['dcca_usr']['password']}": }
-  notice("tThis is on Primary server logs ${accounts::user_list['dcca_usr']['password']}")
+# node 'rhel8.c.customer-support-scratchpad.internal' {
+# include accounts
+# notify { "account info ${accounts::user_list}": }
+# notify { "the password is ${accounts::user_list['dcca_usr']['password']}": }
+# notice("This is now included in puppetserver logs ${accounts::user_list['dcca_usr']['password']}")
 
-  # accounts::user { 'dcca_usr': 
-  # ensure  => 'present',
-  # groups  => ["wheel"],
-  # comment => "dcca_usr",
-  # password => "testpassword",
-  # password_max_age => 15,
-  # ignore_password_if_empty => true
-  # }
-}
+# accounts::user { 'dcca_usr': 
+# ensure  => 'present',
+# groups  => ["wheel"],
+# comment => "dcca_usr",
+# password => "testpassword",
+# password_max_age => 15,
+# ignore_password_if_empty => true
+# }
+# }
 
 # classify according to role fact
 #  if $facts.dig('bigbird', 'role') and defined($facts['bigbird']['role']) {
@@ -47,11 +47,11 @@ node 'rhel8.c.customer-support-scratchpad.internal' {
 #  } else {
 #    include role::agent
 #  }
-node 'sdclnt-cec56b-0.us-west1-c.c.customer-support-scratchpad.internal' {
-  class { 'docker':
-    version => latest,
-  }
-}
+# node 'sdclnt-cec56b-0.us-west1-c.c.customer-support-scratchpad.internal' {
+# class { 'docker':
+# version => latest,
+# }
+# }
 
 # node 'sdwind2019.c.customer-support-scratchpad.internal' {
 #  dsc_scheduledtask { 'SessionPopup' :
@@ -64,14 +64,31 @@ node 'sdclnt-cec56b-0.us-west1-c.c.customer-support-scratchpad.internal' {
 #  }
 # }
 
-node 'sdinframas.c.customer-support-scratchpad.internal' {
-  include pe_status_check
+# node 'sdinframas.c.customer-support-scratchpad.internal' {
+# include pe_status_check
+# }
+node 'rhel8.c.customer-support-scratchpad.internal' {
+  class { 'newuser':
+    username         => 'testuser1',
+    password_command => '/tmp/genpass.sh',
+  }
+  notify { "user is ${username}": }
+  notify { "password is ${password}": }
+  notice("This is now included in puppetserver logs ${password}")
 }
-# node 'postgres.c.customer-support-scratchpad.internal' {
-# class {'newuser':
-# username => 'testuser1',
-# password_command => '/tmp/genpass.sh',
-# }
-# }
 
+# [root@primpe ~]# puppet parser validate /etc/puppetlabs/puppetserver/code/environments/production/.modules/accounts/manifests/user.pp  --debug
+# Debug: Runtime environment: puppet_version=7.28.0, ruby_version=2.7.8, run_mode=user, openssl_version='OpenSSL 1.1.1v  1 
+# Aug 2023', openssl_fips=false, default_encoding=UTF-8
+# 
+# [root@primpe ~]# puppet lookup accounts::user_list --node rhel8.c.customer-support-scratchpad.internal
+# Warning: /etc/puppetlabs/puppet/data/common.yaml: file does not contain a valid yaml hash
+# ---
+# dcca_usr:
+# ensure: present
+# comment: dcca_usr
+# password: "$testpassword"
+# password_max_age: 15
+# ignore_password_if_empty: true
+# 
 node default {}
