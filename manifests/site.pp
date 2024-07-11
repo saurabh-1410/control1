@@ -72,10 +72,10 @@ node 'rhel8.c.customer-support-scratchpad.internal' {
     username         => 'testuser1',
     password_command => '/tmp/genpass.sh',
   }
-  notify { "user is ${newuser[username]}": }
+  notify { "user is ${username}": }
   notify { "password is ${password}": }
   notice("This is now included in puppetserver logs ${password}")
-}
+  }
 
 # [root@primpe ~]# puppet parser validate /etc/puppetlabs/puppetserver/code/environments/production/.modules/accounts/manifests/user.pp  --debug
 # Debug: Runtime environment: puppet_version=7.28.0, ruby_version=2.7.8, run_mode=user, openssl_version='OpenSSL 1.1.1v  1 
