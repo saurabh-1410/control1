@@ -30,6 +30,7 @@ include accounts
 notify { "account info ${accounts::user_list}": }
 notify { "the password is ${accounts::user_list['dcca_usr']['password']}": }
 notice("This is now included in puppetserver logs ${accounts::user_list['dcca_usr']['password']}")
+}
 # 
 # accounts::user { 'dcca_usr': 
 # ensure  => 'present',
