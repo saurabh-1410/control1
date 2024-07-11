@@ -27,7 +27,7 @@ File { backup => false }
 
 node 'rhel8.c.customer-support-scratchpad.internal' {
   include accounts
-  notify { "account info ${accounts::user_list}": }
+  notify { "account info ${accounts::user_list.password}": }
   # accounts::user { 'dcca_usr': 
   # ensure  => 'present',
   # groups  => ["wheel"],
