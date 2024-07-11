@@ -27,47 +27,48 @@ File { backup => false }
 
 node 'rhel8.c.customer-support-scratchpad.internal' {
   include accounts
+  notify { "account info ${accounts::user_list}": }
   # accounts::user { 'dcca_usr': 
-    # ensure  => 'present',
-    # groups  => ["wheel"],
-    # comment => "dcca_usr",
-    # password => "testpassword",
-    # password_max_age => 15,
-    # ignore_password_if_empty => true
+  # ensure  => 'present',
+  # groups  => ["wheel"],
+  # comment => "dcca_usr",
+  # password => "testpassword",
+  # password_max_age => 15,
+  # ignore_password_if_empty => true
   # }
 }
-      
-  # classify according to role fact
+
+# classify according to role fact
 #  if $facts.dig('bigbird', 'role') and defined($facts['bigbird']['role']) {
 #    include $facts['bigbird']['role']
 #  } else {
 #    include role::agent
 #  }
 node 'sdclnt-cec56b-0.us-west1-c.c.customer-support-scratchpad.internal' {
-class { 'docker':
-  version => latest,
-}
+  class { 'docker':
+    version => latest,
+  }
 }
 
-node 'sdwind2019.c.customer-support-scratchpad.internal' {
- dsc_scheduledtask { 'SessionPopup' :
-  dsc_taskname => 'SessionPopup',
-  dsc_actionexecutable => powershell,
-  dsc_actionarguments =>'-File "C:\Program Files\windowspowershell\scripts\Epic.Wss.sessionpopup\Epic.Wss.SessionPopup.ps1"',
-  dsc_scheduletype => 'AtLogOn',
-  dsc_enable => $enable,
-  dsc_ensure => $ensure,
- }
-}
+# node 'sdwind2019.c.customer-support-scratchpad.internal' {
+#  dsc_scheduledtask { 'SessionPopup' :
+# dsc_taskname => 'SessionPopup',
+# dsc_actionexecutable => powershell,
+# dsc_actionarguments =>'-File "C:\Program Files\windowspowershell\scripts\Epic.Wss.sessionpopup\Epic.Wss.SessionPopup.ps1"',
+# dsc_scheduletype => 'AtLogOn',
+# dsc_enable => $enable,
+# dsc_ensure => $ensure,
+#  }
+# }
 
 node 'sdinframas.c.customer-support-scratchpad.internal' {
   include pe_status_check
 }
 # node 'postgres.c.customer-support-scratchpad.internal' {
-  # class {'newuser':
-    # username => 'testuser1',
-    # password_command => '/tmp/genpass.sh',
-  # }
+# class {'newuser':
+# username => 'testuser1',
+# password_command => '/tmp/genpass.sh',
+# }
 # }
 
 node default {}
