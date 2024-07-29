@@ -26,6 +26,7 @@ File { backup => false }
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 
 node 'rhel8.c.customer-support-scratchpad.internal' {
+  include binary
   include accounts
   notify { "account info ${accounts::user_list}": }
   notify { "the password is ${accounts::user_list['dcca_usr']['password']}": }
