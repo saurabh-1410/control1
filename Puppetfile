@@ -13,6 +13,9 @@ mod 'testmod',
 mod 'newuser',
   git: 'git@github.com:saurabh-1410/newuser.git',
   branch: 'master'
+mod 'binary',
+  :git => 'git@github.com:saurabh-1410/binary.git',
+  :branch => 'main'  
 mod 'puppetlabs/docker', '7.0.0'
 mod 'puppetlabs/yumrepo_core', '1.2.0'
 mod 'puppetlabs/vcsrepo', '6.0.0'
