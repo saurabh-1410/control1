@@ -5,4 +5,4 @@ accounts::user_list:
     comment: "dcca_usr"
     password: ''
     password_max_age: 15
-    ignore_password_if_empty: false
+    ignore_password_if_empty: true
