@@ -3,6 +3,6 @@ accounts::user_list:
   dcca_usr:
     ensure: 'present'
     comment: "dcca_usr"
-    password: "$testpassword/eh/"
+    password: ''
     password_max_age: 15
     ignore_password_if_empty: true
