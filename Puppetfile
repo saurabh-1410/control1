@@ -5,6 +5,8 @@
 moduledir '.modules'
 mod 'puppetlabs-cd4pe_jobs', '1.6.1'
 mod 'puppetlabs-cd4pe', '3.3.0'
+mod 'puppetlabs-puppet_authorization', '1.0.0'
+mod 'puppetlabs-hocon', '2.0.0'
 mod 'testmod',
      :git => 'https://github.com/saurabh-1410/testmod',
      :branch => 'master'
