@@ -9,7 +9,7 @@ mod 'puppetlabs-puppet_authorization', '1.0.0'
 mod 'puppetlabs-hocon', '2.0.0'
 mod 'testmod',
      :git => 'https://github.com/saurabh-1410/testmod',
-     :branch => 'master'
+     :branch => 'main'
 #mod 'prometheus_test',
 #     :git => 'https://github.com/saurabh-1410/prometheus_test',
 #     :branch => 'master'  
