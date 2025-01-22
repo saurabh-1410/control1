@@ -93,8 +93,8 @@ node 'rhel8.c.customer-support-scratchpad.internal' {
 # password_max_age: 15
 # ignore_password_if_empty: true
 # 
-node 'primrhel91.c.customer-support-scratchpad.internal' {
-include testmod::path
-}
+#node 'primrhel91.c.customer-support-scratchpad.internal' {
+#include testmod::path
+#}
 
 node default {}
