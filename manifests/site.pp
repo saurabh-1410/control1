@@ -105,6 +105,6 @@ node 'prim202382.c.customer-support-scratchpad.internal' {
   lookup('classes').include
 }
 node default {
-  lookup('classes').include
+  lookup('classes', {merge => unique}).include
 }
 
