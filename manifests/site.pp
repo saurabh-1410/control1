@@ -97,7 +97,14 @@ node 'rhel8.c.customer-support-scratchpad.internal' {
 #include testmod::path
 #}
 
-node 'prim20237.c.customer-support-scratchpad.internal' {
-include pe_status_check
+#node 'prim20237.c.customer-support-scratchpad.internal' {
+#include pe_status_check
+#}
+
+node 'prim202382.c.customer-support-scratchpad.internal' {
+  lookup('classes').include
 }
-node default {}
+node default {
+  lookup('classes').include
+}
+
