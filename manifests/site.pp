@@ -101,10 +101,11 @@ node 'rhel8.c.customer-support-scratchpad.internal' {
 #include pe_status_check
 #}
 
-node 'prim202382.c.customer-support-scratchpad.internal' {
-  lookup('classes').include
-}
-node default {
-  lookup('classes', {merge => unique}).include
-}
+#node 'prim202382.c.customer-support-scratchpad.internal' {
+#  lookup('classes').include
+#}
+#node default {
+#  lookup('classes', {merge => unique}).include
+#}
+node default {}
 
