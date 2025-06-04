@@ -23,7 +23,7 @@ mod 'newuser',
 mod 'codetest',
   :git =>'git@github.com:saurabh-1410/codetest.git',
   #ref => '6ca93f8'
-  :ref => 'v1.0.1'
+  :ref => 'v2.0.1'
 mod 'binary',
   :git => 'git@github.com:saurabh-1410/binary.git',
   :branch => 'main'  
