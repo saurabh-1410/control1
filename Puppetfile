@@ -13,7 +13,7 @@ mod 'puppet_serverlist_update',
      :branch => 'main'
 mod 'testmod',
      :git => 'https://github.com/saurabh-1410/testmod',
-     :commit => '5b36394'
+     :commit => '6c6b477'
 #mod 'prometheus_test',
 #     :git => 'https://github.com/saurabh-1410/prometheus_test',
 #     :branch => 'master'  
