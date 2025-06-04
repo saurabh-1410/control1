@@ -19,7 +19,6 @@ mod 'testmod',
 #     :branch => 'master'  
 mod 'newuser',
   git: 'git@github.com:saurabh-1410/newuser.git',
-  branch: 'master'
 mod 'binary',
   :git => 'git@github.com:saurabh-1410/binary.git',
   :branch => 'main'  
