@@ -9,21 +9,21 @@ mod 'puppetlabs-cd4pe', '3.3.0'
 mod 'puppetlabs-puppet_authorization', '1.0.0'
 mod 'puppetlabs-hocon', '2.0.0'
 mod 'puppet_serverlist_update',
-     :git => 'git@github.com:saurabh-1410/puppet_serverlist_update.git',
-     :branch => 'main'
+  :git => 'git@github.com:saurabh-1410/puppet_serverlist_update.git',
+  :branch => 'main'
 mod 'saurabh-testmod',
-     :git => 'https://github.com/saurabh-1410/testmod.git'
-    # :commit => '6c6b477'
+  :git => 'https://github.com/saurabh-1410/testmod.git'
+  # :commit => '6c6b477'
 #mod 'prometheus_test',
-#     :git => 'https://github.com/saurabh-1410/prometheus_test',
-#     :branch => 'master'  
+# :git => 'https://github.com/saurabh-1410/prometheus_test',
+# :branch => 'master'  
 mod 'newuser',
-  git: 'git@github.com:saurabh-1410/newuser.git',
-  branch: 'main'
+  :git => 'git@github.com:saurabh-1410/newuser.git',
+  :branch => 'main'
 mod 'codetest',
-  git: 'git@github.com:saurabh-1410/codetest.git',
-  #ref: '6ca93f8'
-  ref: 'v1.0.1'
+  :git =>'git@github.com:saurabh-1410/codetest.git',
+  #ref => '6ca93f8'
+  :ref => 'v1.0.1'
 mod 'binary',
   :git => 'git@github.com:saurabh-1410/binary.git',
   :branch => 'main'  
