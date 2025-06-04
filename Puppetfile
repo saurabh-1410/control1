@@ -18,9 +18,11 @@ mod 'testmod',
 #     :git => 'https://github.com/saurabh-1410/prometheus_test',
 #     :branch => 'master'  
 mod 'newuser',
-  git: 'git@github.com:saurabh-1410/newuser.git'
+  git: 'git@github.com:saurabh-1410/newuser.git',
+  branch: 'main'
 mod 'codetest',
-  git: 'git@github.com:saurabh-1410/codetest.git'
+  git: 'git@github.com:saurabh-1410/codetest.git',
+  ref: '6ca93f8'
 mod 'binary',
   :git => 'git@github.com:saurabh-1410/binary.git',
   :branch => 'main'  
