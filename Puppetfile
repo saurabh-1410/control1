@@ -20,6 +20,9 @@ mod 'saurabh-testmod',
 mod 'newuser',
   :git => 'git@github.com:saurabh-1410/newuser.git',
   :branch => 'main'
+mod 'testfunc',
+  :git => 'git@github.com:saurabh-1410/testfunc.git',
+  :branch => 'main'
 mod 'codetest',
   :git =>'git@github.com:saurabh-1410/codetest.git',
   #ref => '6ca93f8'
