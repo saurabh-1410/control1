@@ -6,6 +6,7 @@ moduledir '.modules'
 mod 'puppetlabs-puppet_agent', '4.22.0'
 mod 'puppetlabs-cd4pe_jobs', '1.6.1'
 mod 'puppetlabs-cd4pe', '3.3.0'
+mod 'puppetlabs-lvm', '2.1.0'
 mod 'puppetlabs-puppet_authorization', '1.0.0'
 mod 'puppetlabs-hocon', '2.0.0'
 mod 'puppet_serverlist_update',
