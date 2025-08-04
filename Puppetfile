@@ -4,6 +4,7 @@
 # The following directive installs modules to the managed moduledir.
 moduledir '.modules'
 mod 'puppetlabs-sce_windows', '2.1.0'
+mod 'dsc-computermanagementdsc', '10.0.0-0-3'
 mod 'puppetlabs-puppet_agent', '4.22.0'
 mod 'puppetlabs-cd4pe_jobs', '1.6.1'
 mod 'puppetlabs-cd4pe', '3.3.0'
