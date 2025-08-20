@@ -3,11 +3,11 @@
 
 # The following directive installs modules to the managed moduledir.
 moduledir '.modules'
-mod 'puppetlabs-sce_windows', '2.1.0'
-mod 'dsc-auditpolicydsc', '1.4.0-0-9'
-mod 'dsc-networkingdsc', '9.1.0-0-0'
-mod 'dsc-securitypolicydsc', '2.10.0-0-9'
-mod 'puppetlabs-registry', '5.0.3'
+#mod 'puppetlabs-sce_windows', '2.1.0'
+#mod 'dsc-auditpolicydsc', '1.4.0-0-9'
+#mod 'dsc-networkingdsc', '9.1.0-0-0'
+#mod 'dsc-securitypolicydsc', '2.10.0-0-9'
+#mod 'puppetlabs-registry', '5.0.3'
 mod 'puppetlabs-puppet_agent', '4.22.0'
 mod 'puppetlabs-cd4pe_jobs', '1.7.1'
 mod 'puppetlabs-cd4pe', '3.3.0'
