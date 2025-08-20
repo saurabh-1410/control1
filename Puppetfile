@@ -5,8 +5,8 @@
 moduledir '.modules'
 mod 'puppetlabs-puppet_metrics_collector', '8.2.1'
 mod 'mytest',
-  type: 'tarball',
-  sources: 'comp2179.us-west1-c.c.customer-support-scratchpad.internal:8443/puppetlabs-ntp-11.1.0.tar.gz'
+  :type => 'tarball',
+  :sources => 'comp2179.us-west1-c.c.customer-support-scratchpad.internal:8443/puppetlabs-ntp-11.1.0.tar.gz'
 
 #mod 'puppetlabs-sce_windows', '2.1.0'
 #mod 'dsc-auditpolicydsc', '1.4.0-0-9'
