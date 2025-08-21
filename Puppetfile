@@ -4,9 +4,9 @@
 # The following directive installs modules to the managed moduledir.
 moduledir '.modules'
 mod 'puppetlabs-puppet_metrics_collector', '8.2.1'
-mod 'tarball',
-  type => 'tarball',
-  source => 'https://github.com/saurabh-1410/codetest/archive/refs/tags/v1.0.1.tar.gz'
+#mod 'tarball',
+#  type => 'tarball',
+#  source => 'https://github.com/saurabh-1410/codetest/archive/refs/tags/v1.0.1.tar.gz'
 #mod 'puppetlabs-sce_windows', '2.1.0'
 #mod 'dsc-auditpolicydsc', '1.4.0-0-9'
 #mod 'dsc-networkingdsc', '9.1.0-0-0'
