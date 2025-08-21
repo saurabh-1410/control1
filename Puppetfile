@@ -5,7 +5,7 @@
 moduledir '.modules'
 mod 'puppetlabs-puppet_metrics_collector', '8.2.1'
 mod 'tarball',
-  :type: => 'tarball',
+  :type => 'tarball',
   :source => 'https://github.com/saurabh-1410/tarball/blob/main/puppetlabs-apache-12.3.1.tar.gz'
 #mod 'puppetlabs-sce_windows', '2.1.0'
 #mod 'dsc-auditpolicydsc', '1.4.0-0-9'
