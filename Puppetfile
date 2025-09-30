@@ -12,7 +12,6 @@ mod 'tarball',
 #mod 'dsc-networkingdsc', '9.1.0-0-0'
 #mod 'dsc-securitypolicydsc', '2.10.0-0-9'
 #mod 'puppetlabs-registry', '5.0.3'
-mod 'puppetlabs-playbook_runner', '1.0.0'
 mod 'puppetlabs-puppet_agent', '4.22.0'
 mod 'puppetlabs-cd4pe_jobs', '1.7.1'
 mod 'puppetlabs-cd4pe', '3.3.0'
