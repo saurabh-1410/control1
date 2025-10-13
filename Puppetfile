@@ -13,7 +13,7 @@ mod 'tarball',
 #mod 'dsc-securitypolicydsc', '2.10.0-0-9'
 #mod 'puppetlabs-registry', '5.0.3'
 mod 'puppetlabs-puppet_agent', '4.22.0'
-mod 'puppetlabs-cd4pe_jobs', '1.7.1'
+mod 'puppetlabs-cd4pe_jobs', '1.7.2'
 mod 'puppetlabs-cd4pe', '3.3.0'
 mod 'puppetlabs-lvm', '2.1.0'
 mod 'puppetlabs-puppet_authorization', '1.0.0'
@@ -29,9 +29,6 @@ mod 'saurabh-testmod',
 # :branch => 'master'  
 mod 'newuser',
   :git => 'git@github.com:saurabh-1410/newuser.git',
-  :branch => 'main'
-mod 'testfunc',
-  :git => 'git@github.com:saurabh-1410/testfunc.git',
   :branch => 'main'
 mod 'codetest',
   :git =>'git@github.com:saurabh-1410/codetest.git',
