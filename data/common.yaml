@@ -13,3 +13,13 @@
 #  control2:
 #    remote: "git@github.com:saurabh-1410/control-repo.git"
 #    prefix: true
+puppet_enterprise::profile::master::versioned_deploys: true
+
+sce_linux::benchmark: 'cis'
+sce_linux::config:
+  level: '1'
+  profile: 'server'
+  control_configs:
+    "Ensure permissions on /etc/ssh/sshd_config are configured":
+      allow_users: [root]
+      allow_groups: [user]
