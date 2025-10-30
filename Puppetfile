@@ -37,6 +37,9 @@ mod 'codetest',
 mod 'binary',
   :git => 'git@sdgitlab.us-west1-c.c.customer-support-scratchpad.internal:root/binary.git',
   :branch => 'main'
+mod 'appdynamics_agent',
+  :git => 'git@sdgitlab.us-west1-c.c.customer-support-scratchpad.internal:root/appdynamics_agent.git',
+  :branch => 'main'
 mod 'puppetlabs/docker', '7.0.0'
 mod 'puppetlabs/yumrepo_core', '1.2.0'
 mod 'puppetlabs/vcsrepo', '6.0.0'
