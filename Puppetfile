@@ -30,10 +30,10 @@ mod 'saurabh-testmod',
 mod 'newuser',
   :git => 'git@github.com:saurabh-1410/newuser.git',
   :branch => 'main'
-mod 'codetest',
-  :git =>'git@github.com:saurabh-1410/codetest.git',
-  #ref => '6ca93f8'
-  :ref => 'v1.0.1'
+#mod 'codetest',
+#  :git =>'git@github.com:saurabh-1410/codetest.git',
+#  : ref => '6ca93f8'
+#  :ref => 'v1.0.1'
 mod 'binary',
   :git => 'git@sdgitlab.us-west1-c.c.customer-support-scratchpad.internal:root/binary.git',
   :branch => 'main'
