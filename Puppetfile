@@ -4,9 +4,9 @@
 # The following directive installs modules to the managed moduledir.
 moduledir '.modules'
 mod 'puppetlabs-puppet_metrics_collector', '8.2.1'
-mod 'tarball',
-  :type => 'tarball',
-  :source => 'https://github.com/saurabh-1410/codetest/archive/refs/tags/v1.0.1.tar.gz'
+#mod 'tarball',
+#  :type => 'tarball',
+#  :source => 'https://github.com/saurabh-1410/codetest/archive/refs/tags/v1.0.1.tar.gz'
 #mod 'puppetlabs-sce_windows', '2.1.0'
 #mod 'dsc-auditpolicydsc', '1.4.0-0-9'
 #mod 'dsc-networkingdsc', '9.1.0-0-0'
@@ -34,12 +34,12 @@ mod 'newuser',
 #  :git =>'git@github.com:saurabh-1410/codetest.git',
 #  : ref => '6ca93f8'
 #  :ref => 'v1.0.1'
-mod 'binary',
-  :git => 'git@sdgitlab.us-west1-c.c.customer-support-scratchpad.internal:root/binary.git',
-  :branch => 'main'
-mod 'appdynamics_agent',
-  :git => 'git@sdgitlab.us-west1-c.c.customer-support-scratchpad.internal:root/appdynamics_agent.git',
-  :branch => 'master'
+#mod 'binary',
+#  :git => 'git@sdgitlab.us-west1-c.c.customer-support-scratchpad.internal:root/binary.git',
+#  :branch => 'main'
+#mod 'appdynamics_agent',
+#  :git => 'git@sdgitlab.us-west1-c.c.customer-support-scratchpad.internal:root/appdynamics_agent.git',
+#  :branch => 'master'
 mod 'puppetlabs/docker', '7.0.0'
 mod 'puppetlabs/yumrepo_core', '1.2.0'
 mod 'puppetlabs/vcsrepo', '6.0.0'
