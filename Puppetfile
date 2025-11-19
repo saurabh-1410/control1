@@ -67,6 +67,7 @@ mod 'puppet-firewalld', '5.0.0'
 mod 'puppet-logrotate', '7.1.0'
 mod 'puppet-selinux', '5.0.0'
 mod 'puppet-systemd', '7.1.0'
+mod 'puppetlabs-pe_databases', '4.1.0'
 
 # Puppet comply module
 mod 'puppetlabs/comply', '3.5.0'
