@@ -24,9 +24,9 @@ mod 'puppet_serverlist_update',
 mod 'saurabh-testmod',
   :git => 'https://github.com/saurabh-1410/testmod.git',
   :branch => 'main'
-#mod 'prometheus_test',
-# :git => 'https://github.com/saurabh-1410/prometheus_test',
-# :branch => 'master'  
+mod 'prometheus_test',
+ :git => 'https://github.com/saurabh-1410/prometheus_test',
+ :branch => 'master'  
 mod 'newuser',
   :git => 'git@github.com:saurabh-1410/newuser.git',
   :branch => 'main'
