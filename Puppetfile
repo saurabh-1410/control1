@@ -21,6 +21,9 @@ mod 'puppetlabs-hocon', '2.0.0'
 mod 'puppet_serverlist_update',
   :git => 'git@github.com:saurabh-1410/puppet_serverlist_update.git',
   :branch => 'main'
+mod 'ps7check',
+  :git => 'git@github.com:saurabh-1410/ps7check.git',
+  :branch => 'main'
 mod 'saurabh-testmod',
   :git => 'https://github.com/saurabh-1410/testmod.git',
   :branch => 'main'
