@@ -34,9 +34,9 @@ mod 'codetest',
   :git =>'git@github.com:saurabh-1410/codetest.git',
   #ref => '6ca93f8'
   :ref => 'v1.0.1'
-mod 'binary',
-  :git => 'git@github.com:saurabh-1410/binary.git',
-  :branch => 'main'  
+#mod 'binary',
+#  :git => 'git@github.com:saurabh-1410/binary.git',
+#  :branch => 'main'  
 mod 'puppetlabs/docker', '7.0.0'
 mod 'puppetlabs/yumrepo_core', '1.2.0'
 mod 'puppetlabs/vcsrepo', '6.0.0'
