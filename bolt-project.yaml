@@ -1,25 +1,6 @@
 ---
 name: control_repo
 modules:
-- herculesteam/augeasproviders_sysctl
-- puppet/archive
-- puppet/epel
-- puppet/nodejs
-- puppet/selinux
-- puppet/systemd
-- puppet-windows_env
-- puppetlabs-acl
-- puppetlabs/chocolatey
-- puppetlabs/inifile
-- puppetlabs/pe_status_check
-- puppetlabs/puppet_operational_dashboards
-- puppetlabs/stdlib
-- puppetlabs/vcsrepo
-- puppetlabs/yumrepo_core
-- puppetlabs/cd4pe_jobs
-- puppetlabs/docker
-- git: https://github.com/saurabh-1410/testmod
-  ref: 'feature_test'
 plans:
 - control_repo::*
 tasks:
