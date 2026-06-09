@@ -65,7 +65,7 @@ mod 'puppet-selinux', '5.0.0'
 mod 'puppet-systemd', '7.1.0'
 
 # Puppet comply module
-mod 'puppetlabs/comply', '3.7.1'
+mod 'puppetlabs/comply', '3.8.0'
  
 # dependencies for comply
 mod 'puppet/archive', '7.1.0'
